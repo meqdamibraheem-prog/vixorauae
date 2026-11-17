@@ -60,34 +60,22 @@ html[dir="rtl"] body{line-height:1.8}
 .btn svg{width:20px;height:20px;flex:none}
 .menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px}
 
-/* ---------- hero: the one bold moment ---------- */
-.hero{position:relative;overflow:hidden;background:var(--mist)}
-.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;min-height:620px;padding-top:56px;padding-bottom:72px}
-.hero h1{font-size:clamp(42px,6vw,78px);line-height:1.02;font-weight:700;letter-spacing:-.02em}
+/* ---------- hero: full-width project photo with an aubergine overlay ---------- */
+.hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(36,18,63,.93) 0%,rgba(36,18,63,.78) 45%,rgba(36,18,63,.18) 100%)}
+html[dir="rtl"] .hero::before{background:linear-gradient(270deg,rgba(36,18,63,.93) 0%,rgba(36,18,63,.78) 45%,rgba(36,18,63,.18) 100%)}
+.hero .wrap{display:flex;align-items:center;min-height:640px;padding-top:64px;padding-bottom:80px}
+.hero .copy{max-width:620px}
+.hero h1{font-size:clamp(42px,6vw,78px);line-height:1.02;font-weight:700;letter-spacing:-.02em;color:#fff}
 html[dir="rtl"] .hero h1{letter-spacing:0;line-height:1.2}
-.hero .lead{margin-top:22px;font-size:19px;color:var(--ink-soft);max-width:30em}
+.hero .lead{margin-top:22px;font-size:19px;color:#EDE6F8;max-width:30em}
 .hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero .btn-ghost{color:#fff;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6)}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.2);box-shadow:inset 0 0 0 1.5px #fff}
 .hero .served{margin-top:40px;display:flex;flex-wrap:wrap;gap:10px}
+.hero .chip{background:rgba(255,255,255,.14);color:#fff}
 .chip{background:#fff;border-radius:999px;padding:6px 14px;font-size:14px;color:var(--ink-soft)}
-
-/* the rings: poured-rubber flooring, drawn in CSS around a circular photo (echoes the circular logo) */
-.rings{position:relative;aspect-ratio:1;width:min(100%,560px);justify-self:center}
-.rings::before{content:"";position:absolute;inset:0;border-radius:50%;
-  background:radial-gradient(circle,
-    transparent 0 49%,
-    var(--sun) 49% 57%,
-    var(--turf) 57% 64%,
-    var(--violet-logo) 64% 72%,
-    #5BC2F0 72% 79%,
-    var(--flag-red) 79% 83%,
-    transparent 83%);
-  animation:spin-in 1.4s cubic-bezier(.2,.8,.2,1) both}
-.rings .photo{position:absolute;inset:17%;border-radius:50%;overflow:hidden;box-shadow:0 0 0 10px #fff}
-.rings .photo img{width:100%;height:100%;object-fit:cover}
-.rings .badge{position:absolute;inset-inline-end:2%;bottom:9%;background:#fff;border-radius:18px;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 12px 30px rgba(36,18,63,.14);max-width:240px}
-.rings .badge img{width:40px;height:40px}
-.rings .badge b{display:block;font-size:15px;line-height:1.25}
-.rings .badge span{font-size:13px;color:var(--ink-soft)}
 @keyframes spin-in{from{transform:rotate(-40deg) scale(.86);opacity:0}to{transform:none;opacity:1}}
 
 /* ---------- sections ---------- */
@@ -172,8 +160,8 @@ footer .f-brand img{width:40px;height:40px}
   .nav.open{display:flex;position:absolute;top:78px;inset-inline:0;flex-direction:column;background:#fff;padding:18px 28px;gap:16px;border-bottom:1px solid #ECE6F7}
   .menu-btn{display:block;margin-inline-start:auto}
   .top .btn-primary{display:none}
-  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:36px}
-  .rings{width:min(100%,440px)}
+  .hero .wrap{min-height:560px;padding-top:40px}
+  .hero::before,html[dir="rtl"] .hero::before{background:rgba(36,18,63,.8)}
   .products,.quote{grid-template-columns:1fr}
   .feature{min-height:380px}
   .sector-row,.steps{grid-template-columns:1fr 1fr}
@@ -212,8 +200,9 @@ footer .f-brand img{width:40px;height:40px}
 <main id="home">
   <!-- HERO -->
   <section class="hero" style="padding:0">
+    <img class="hero-bg" src="shade-playground.jpg" alt="" fetchpriority="high">
     <div class="wrap">
-      <div>
+      <div class="copy">
         <h1><span lang="en">We bring joy to space.</span><span lang="ar">نصنع البهجة في كل مساحة.</span></h1>
         <p class="lead">
           <span lang="en">Playgrounds, shade structures, safety flooring, tents and leisure installations for villas, schools, resorts and commercial projects across the UAE. Supplied and installed by one team, on time.</span>
@@ -231,14 +220,6 @@ footer .f-brand img{width:40px;height:40px}
           <span class="chip"><span lang="en">Schools</span><span lang="ar">المدارس</span></span>
           <span class="chip"><span lang="en">Resorts</span><span lang="ar">المنتجعات</span></span>
           <span class="chip"><span lang="en">Commercial projects</span><span lang="ar">المشاريع التجارية</span></span>
-        </div>
-      </div>
-      <div class="rings" aria-hidden="false">
-        <div class="photo"><img src="shade-playground.jpg" alt="Shaded outdoor playground with coloured rubber flooring"></div>
-        <div class="badge">
-          <img src="logo-icon.png" alt="">
-          <div><b><span lang="en">Safety first</span><span lang="ar">السلامة أولًا</span></b>
-          <span><span lang="en">Child-safe structures to international standards</span><span lang="ar">هياكل آمنة للأطفال وفق المعايير الدولية</span></span></div>
         </div>
       </div>
     </div>
