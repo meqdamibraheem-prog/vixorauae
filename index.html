@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vixora UAE | Playgrounds, Shades &amp; Leisure Solutions – فيكسورا الإمارات</title>
+<link rel="icon" type="image/png" href="/assets/logo-icon.png">
+<link rel="apple-touch-icon" href="/assets/logo-icon.png">
+<link rel="canonical" href="https://www.vixorauae.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.vixorauae.com/">
+<meta property="og:title" content="Vixora UAE – Playgrounds, Shades &amp; Leisure Solutions">
+<meta property="og:description" content="Playground equipment, shade structures, safety flooring, tents and leisure installations across the UAE.">
+<meta property="og:image" content="https://www.vixorauae.com/assets/shade-playground.jpg">
+<meta name="description" content="Vixora Entertainment Trading F.Z.C – playground equipment, shade structures, safety flooring, tents and leisure installations across the UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --violet:#7B3FE4;      /* Vixora violet, a shade deeper than the logo for text contrast */
+  --violet-logo:#8B55FF;
+  --ink:#24123F;         /* aubergine ink */
+  --ink-soft:#5A4B73;
+  --mist:#F4F0FB;        /* lilac mist */
+  --sun:#FFC531;         /* playground yellow */
+  --turf:#2E9E5B;        /* UAE green */
+  --flag-red:#E2262C;
+  --white:#fff;
+  --r-lg:28px; --r-sm:12px;
+  --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{font-family:"Readex Pro",system-ui,sans-serif;color:var(--ink);background:var(--white);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+
+/* language switching */
+html[lang="en"] [lang="ar"]:not(html),html[lang="ar"] [lang="en"]:not(html){display:none!important}
+html[dir="rtl"] body{line-height:1.8}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid #ECE6F7}
+.top .wrap{display:flex;align-items:center;gap:28px;height:78px}
+.brand img{height:54px;width:auto}
+.nav{display:flex;gap:26px;margin-inline-start:auto}
+.nav a{text-decoration:none;font-weight:500;font-size:15.5px;color:var(--ink-soft)}
+.nav a:hover{color:var(--violet)}
+.lang{border:1.5px solid #DCD2F2;background:none;border-radius:999px;padding:7px 14px;font:inherit;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer}
+.lang:hover{border-color:var(--violet)}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;border-radius:999px;padding:13px 24px;font-size:16px;border:0;cursor:pointer;font-family:inherit}
+.btn-primary{background:var(--violet);color:#fff}
+.btn-primary:hover{background:#6930CF}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px #CFC3EC}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--violet)}
+.btn svg{width:20px;height:20px;flex:none}
+.menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px}
+
+/* ---------- hero: the one bold moment ---------- */
+.hero{position:relative;overflow:hidden;background:var(--mist)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;min-height:620px;padding-top:56px;padding-bottom:72px}
+.hero h1{font-size:clamp(42px,6vw,78px);line-height:1.02;font-weight:700;letter-spacing:-.02em}
+html[dir="rtl"] .hero h1{letter-spacing:0;line-height:1.2}
+.hero .lead{margin-top:22px;font-size:19px;color:var(--ink-soft);max-width:30em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero .served{margin-top:40px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:#fff;border-radius:999px;padding:6px 14px;font-size:14px;color:var(--ink-soft)}
+
+/* the rings: poured-rubber flooring, drawn in CSS around a circular photo (echoes the circular logo) */
+.rings{position:relative;aspect-ratio:1;width:min(100%,560px);justify-self:center}
+.rings::before{content:"";position:absolute;inset:0;border-radius:50%;
+  background:radial-gradient(circle,
+    transparent 0 49%,
+    var(--sun) 49% 57%,
+    var(--turf) 57% 64%,
+    var(--violet-logo) 64% 72%,
+    #5BC2F0 72% 79%,
+    var(--flag-red) 79% 83%,
+    transparent 83%);
+  animation:spin-in 1.4s cubic-bezier(.2,.8,.2,1) both}
+.rings .photo{position:absolute;inset:17%;border-radius:50%;overflow:hidden;box-shadow:0 0 0 10px #fff}
+.rings .photo img{width:100%;height:100%;object-fit:cover}
+.rings .badge{position:absolute;inset-inline-end:2%;bottom:9%;background:#fff;border-radius:18px;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 12px 30px rgba(36,18,63,.14);max-width:240px}
+.rings .badge img{width:40px;height:40px}
+.rings .badge b{display:block;font-size:15px;line-height:1.25}
+.rings .badge span{font-size:13px;color:var(--ink-soft)}
+@keyframes spin-in{from{transform:rotate(-40deg) scale(.86);opacity:0}to{transform:none;opacity:1}}
+
+/* ---------- sections ---------- */
+section{padding:96px 0}
+.head{max-width:640px;margin-bottom:44px}
+.head h2{font-size:clamp(30px,3.6vw,44px);line-height:1.12;font-weight:700;letter-spacing:-.01em}
+html[dir="rtl"] .head h2{line-height:1.35;letter-spacing:0}
+.head p{margin-top:14px;color:var(--ink-soft);font-size:18px}
+
+/* products: one large feature + a list, not a grid of identical cards */
+.products{display:grid;grid-template-columns:1.1fr 1fr;gap:28px}
+.feature{position:relative;border-radius:var(--r-lg);overflow:hidden;min-height:520px;color:#fff;display:flex;align-items:flex-end}
+.feature img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.feature::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(36,18,63,.85),rgba(36,18,63,0) 55%)}
+.feature div{position:relative;z-index:1;padding:32px}
+.feature h3{font-size:28px;line-height:1.2}
+.feature p{opacity:.9;margin-top:8px;max-width:28em}
+.plist{list-style:none;display:flex;flex-direction:column}
+.plist li{display:grid;grid-template-columns:92px 1fr;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid #ECE6F7}
+.plist li:first-child{padding-top:0}
+.plist .thumb{width:92px;height:92px;border-radius:50%;overflow:hidden;background:var(--mist);display:grid;place-items:center}
+.plist .thumb img{width:100%;height:100%;object-fit:cover}
+.plist .thumb svg{width:40px;height:40px;color:var(--violet)}
+.plist h3{font-size:19px;font-weight:600;line-height:1.3}
+.plist p{font-size:15.5px;color:var(--ink-soft);margin-top:2px}
+
+/* sectors */
+.sectors{background:var(--ink);color:#fff}
+.sectors .head p{color:#CFC3EC}
+.sector-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.sector h3{font-size:21px;font-weight:600;margin-top:16px}
+.sector p{color:#CFC3EC;font-size:15.5px;margin-top:6px}
+.sector .dot{width:52px;height:52px;border-radius:50%;display:grid;place-items:center}
+.sector .dot svg{width:26px;height:26px}
+
+/* projects strip */
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:16px}
+.gallery figure{position:relative;border-radius:20px;overflow:hidden;background:var(--mist)}
+.gallery figure:first-child{grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.gallery figcaption{position:absolute;inset-inline-start:12px;bottom:12px;background:rgba(255,255,255,.95);border-radius:999px;padding:5px 13px;font-size:13.5px;font-weight:500}
+.note{margin-top:16px;font-size:14px;color:var(--ink-soft)}
+
+/* process: a real sequence, so numbers earn their place */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+.steps li{counter-increment:s;padding-top:22px;border-top:3px solid var(--mist);position:relative}
+.steps li::before{content:counter(s);position:absolute;top:-17px;inset-inline-start:0;width:32px;height:32px;border-radius:50%;background:var(--violet);color:#fff;font-weight:600;font-size:15px;display:grid;place-items:center}
+.steps h3{font-size:19px;font-weight:600;margin-top:6px}
+.steps p{font-size:15.5px;color:var(--ink-soft);margin-top:6px}
+
+/* quote band */
+.quote{background:var(--mist);border-radius:var(--r-lg);padding:56px;display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center}
+.quote h2{font-size:clamp(28px,3.2vw,40px);line-height:1.15}
+html[dir="rtl"] .quote h2{line-height:1.4}
+.quote p{color:var(--ink-soft);margin-top:10px}
+.quote .actions{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.quote .btn{justify-content:center}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.contact-grid h3{font-size:15px;font-weight:500;color:var(--ink-soft)}
+.contact-grid a,.contact-grid address{display:block;font-style:normal;font-size:18px;font-weight:500;text-decoration:none;margin-top:4px;unicode-bidi:plaintext}
+.contact-grid a:hover{color:var(--violet)}
+.contact-grid .item{padding:18px 0;border-bottom:1px solid #ECE6F7}
+.ltr{direction:ltr;unicode-bidi:isolate}
+
+/* footer */
+footer{background:var(--ink);color:#CFC3EC;padding:44px 0;font-size:14.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+footer .f-brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:600}
+footer .f-brand img{width:40px;height:40px}
+.flag{display:inline-flex;height:10px;width:28px;border-radius:2px;overflow:hidden;vertical-align:middle;margin-inline-start:8px}
+.flag i{flex:1}
+
+/* floating WhatsApp */
+.wa{position:fixed;inset-inline-end:22px;bottom:22px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.wa svg{width:32px;height:32px;color:#fff}
+
+/* responsive */
+@media (max-width:980px){
+  .nav{display:none}
+  .nav.open{display:flex;position:absolute;top:78px;inset-inline:0;flex-direction:column;background:#fff;padding:18px 28px;gap:16px;border-bottom:1px solid #ECE6F7}
+  .menu-btn{display:block;margin-inline-start:auto}
+  .top .btn-primary{display:none}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:36px}
+  .rings{width:min(100%,440px)}
+  .products,.quote{grid-template-columns:1fr}
+  .feature{min-height:380px}
+  .sector-row,.steps{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:220px 160px 160px}
+  .gallery figure:first-child{grid-column:span 2;grid-row:auto}
+  .contact-grid{grid-template-columns:1fr}
+  section{padding:68px 0}
+  .quote{padding:34px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 20px}
+  .brand img{height:44px}
+  .sector-row,.steps{grid-template-columns:1fr}
+  .steps{gap:36px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Vixora home"><img src="assets/logo-full.jpg" alt="Vixora Entertainment Trading F.Z.C"></a>
+    <nav class="nav" id="nav">
+      <a href="#products"><span lang="en">Products</span><span lang="ar">المنتجات</span></a>
+      <a href="#sectors"><span lang="en">Who we serve</span><span lang="ar">لمن نعمل</span></a>
+      <a href="#projects"><span lang="en">Projects</span><span lang="ar">المشاريع</span></a>
+      <a href="#process"><span lang="en">How we work</span><span lang="ar">طريقة عملنا</span></a>
+      <a href="#contact"><span lang="en">Contact</span><span lang="ar">تواصل معنا</span></a>
+    </nav>
+    <button class="lang" id="langBtn" type="button"><span lang="en">العربية</span><span lang="ar">English</span></button>
+    <a class="btn btn-primary" href="https://wa.me/971501490844"><span lang="en">Request a quote</span><span lang="ar">اطلب عرض سعر</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<main id="home">
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <div>
+        <h1><span lang="en">We bring joy to space.</span><span lang="ar">نصنع البهجة في كل مساحة.</span></h1>
+        <p class="lead">
+          <span lang="en">Playgrounds, shade structures, safety flooring, tents and leisure installations for villas, schools, resorts and commercial projects across the UAE. Supplied and installed by one team, on time.</span>
+          <span lang="ar">ملاعب أطفال، ومظلات، وأرضيات أمان، وخيام، ومنشآت ترفيهية للفلل والمدارس والمنتجعات والمشاريع التجارية في جميع أنحاء الإمارات. توريد وتركيب بفريق واحد، وفي الموعد.</span>
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/971501490844">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+            <span lang="en">Request a quote on WhatsApp</span><span lang="ar">اطلب عرض سعر عبر واتساب</span>
+          </a>
+          <a class="btn btn-ghost" href="#products"><span lang="en">See what we install</span><span lang="ar">تعرّف على منتجاتنا</span></a>
+        </div>
+        <div class="served" aria-label="Sectors">
+          <span class="chip"><span lang="en">Villas</span><span lang="ar">الفلل</span></span>
+          <span class="chip"><span lang="en">Schools</span><span lang="ar">المدارس</span></span>
+          <span class="chip"><span lang="en">Resorts</span><span lang="ar">المنتجعات</span></span>
+          <span class="chip"><span lang="en">Commercial projects</span><span lang="ar">المشاريع التجارية</span></span>
+        </div>
+      </div>
+      <div class="rings" aria-hidden="false">
+        <div class="photo"><img src="assets/shade-playground.jpg" alt="Shaded outdoor playground with coloured rubber flooring"></div>
+        <div class="badge">
+          <img src="assets/logo-icon.png" alt="">
+          <div><b><span lang="en">Safety first</span><span lang="ar">السلامة أولًا</span></b>
+          <span><span lang="en">Child-safe structures to international standards</span><span lang="ar">هياكل آمنة للأطفال وفق المعايير الدولية</span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="wrap">
+      <div class="head">
+        <h2><span lang="en">Everything for a play or leisure space, under one roof</span><span lang="ar">كل ما تحتاجه مساحات اللعب والترفيه، من مكان واحد</span></h2>
+        <p><span lang="en">Tell us about the space. We recommend the equipment, supply it and install it.</span><span lang="ar">أخبرنا عن المساحة، ونحن نقترح المعدات المناسبة ونورّدها ونركّبها.</span></p>
+      </div>
+      <div class="products">
+        <article class="feature">
+          <img src="assets/indoor-softplay.jpg" alt="Indoor play area with slide and ball pit">
+          <div>
+            <h3><span lang="en">Entertainment & amusement equipment</span><span lang="ar">معدات الترفيه والألعاب</span></h3>
+            <p><span lang="en">Indoor and outdoor play structures, slides, swings and activity areas, customised to your site.</span><span lang="ar">هياكل لعب داخلية وخارجية، وزحاليق، ومراجيح، ومناطق أنشطة مصممة حسب موقعك.</span></p>
+          </div>
+        </article>
+        <ul class="plist">
+          <li><div class="thumb"><img src="assets/school-shade.jpg" alt=""></div>
+            <div><h3><span lang="en">Shading systems</span><span lang="ar">أنظمة التظليل</span></h3>
+            <p><span lang="en">Shade structures that keep play areas usable through the UAE summer.</span><span lang="ar">مظلات تجعل مناطق اللعب صالحة للاستخدام طوال صيف الإمارات.</span></p></div></li>
+          <li><div class="thumb"><img src="assets/rubber-flooring.jpg" alt=""></div>
+            <div><h3><span lang="en">Flooring solutions</span><span lang="ar">حلول الأرضيات</span></h3>
+            <p><span lang="en">Impact-absorbing safety surfaces in custom colours and patterns.</span><span lang="ar">أرضيات أمان ممتصة للصدمات بألوان وتصاميم حسب الطلب.</span></p></div></li>
+          <li><div class="thumb"><img src="assets/tent.jpg" alt=""></div>
+            <div><h3><span lang="en">Tents</span><span lang="ar">الخيام</span></h3>
+            <p><span lang="en">Tents for events, outdoor seating and seasonal venues.</span><span lang="ar">خيام للفعاليات والجلسات الخارجية والمواقع الموسمية.</span></p></div></li>
+          <li><div class="thumb"><img src="assets/gaming-arcade.jpg" alt=""></div>
+            <div><h3><span lang="en">Gaming devices</span><span lang="ar">أجهزة الألعاب</span></h3>
+            <p><span lang="en">Arcade and gaming machines for family entertainment centres and malls.</span><span lang="ar">أجهزة ألعاب لمراكز الترفيه العائلي والمراكز التجارية.</span></p></div></li>
+          <li><div class="thumb"><img src="assets/waterpark.jpg" alt=""></div>
+            <div><h3><span lang="en">Leisure installations</span><span lang="ar">المنشآت الترفيهية</span></h3>
+            <p><span lang="en">Complete leisure areas for resorts, hotels and residential communities.</span><span lang="ar">مناطق ترفيه متكاملة للمنتجعات والفنادق والمجمعات السكنية.</span></p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS -->
+  <section class="sectors" id="sectors">
+    <div class="wrap">
+      <div class="head">
+        <h2><span lang="en">Who we work with</span><span lang="ar">لمن نعمل</span></h2>
+        <p><span lang="en">Every project is planned around the people who will use the space.</span><span lang="ar">نخطط كل مشروع حول الأشخاص الذين سيستخدمون المساحة.</span></p>
+      </div>
+      <div class="sector-row">
+        <div class="sector"><div class="dot" style="background:var(--sun);color:var(--ink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11 12 4l9 7M5 10v10h14V10"/></svg></div>
+          <h3><span lang="en">Villas</span><span lang="ar">الفلل</span></h3>
+          <p><span lang="en">Private play gardens and shaded outdoor areas.</span><span lang="ar">حدائق لعب خاصة ومناطق خارجية مظللة.</span></p></div>
+        <div class="sector"><div class="dot" style="background:var(--turf);color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></div>
+          <h3><span lang="en">Schools & nurseries</span><span lang="ar">المدارس والحضانات</span></h3>
+          <p><span lang="en">Durable, child-safe playgrounds and shading.</span><span lang="ar">ملاعب ومظلات متينة وآمنة للأطفال.</span></p></div>
+        <div class="sector"><div class="dot" style="background:var(--violet-logo);color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M2 20c3-3 6-3 10-1s7 2 10-1"/></svg></div>
+          <h3><span lang="en">Resorts & hotels</span><span lang="ar">المنتجعات والفنادق</span></h3>
+          <p><span lang="en">Leisure areas that guests and families enjoy.</span><span lang="ar">مناطق ترفيه يستمتع بها النزلاء والعائلات.</span></p></div>
+        <div class="sector"><div class="dot" style="background:#5BC2F0;color:var(--ink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V5l8-2v18M12 9h8v12M7 8v1M7 12v1M7 16v1M16 13v1M16 17v1"/></svg></div>
+          <h3><span lang="en">Commercial projects</span><span lang="ar">المشاريع التجارية</span></h3>
+          <p><span lang="en">Malls, entertainment centres and developments.</span><span lang="ar">المراكز التجارية ومراكز الترفيه والمشاريع العقارية.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="head">
+        <h2><span lang="en">Spaces we have brought to life</span><span lang="ar">مساحات صنعنا فيها البهجة</span></h2>
+      </div>
+      <div class="gallery">
+        <figure><img src="assets/kids-room.jpg" alt="Indoor kids room with soft flooring and play furniture"><figcaption><span lang="en">Indoor kids area</span><span lang="ar">منطقة أطفال داخلية</span></figcaption></figure>
+        <figure><img src="assets/shade-playground.jpg" alt="Shaded playground"><figcaption><span lang="en">Shaded playground</span><span lang="ar">ملعب مظلل</span></figcaption></figure>
+        <figure><img src="assets/rubber-flooring.jpg" alt="Coloured rubber safety flooring"><figcaption><span lang="en">Safety flooring</span><span lang="ar">أرضيات أمان</span></figcaption></figure>
+        <figure><img src="assets/indoor-softplay.jpg" alt="Indoor soft play with ball pit"><figcaption><span lang="en">Indoor soft play</span><span lang="ar">منطقة لعب داخلية</span></figcaption></figure>
+        <figure><img src="assets/school-shade.jpg" alt="School playground under shade sails"><figcaption><span lang="en">School playground</span><span lang="ar">ملعب مدرسة</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <h2><span lang="en">How a project runs</span><span lang="ar">كيف ننفّذ المشروع</span></h2>
+      </div>
+      <ol class="steps">
+        <li><h3><span lang="en">Site visit</span><span lang="ar">زيارة الموقع</span></h3><p><span lang="en">We measure the space and understand who will use it.</span><span lang="ar">نقيس المساحة ونفهم من سيستخدمها.</span></p></li>
+        <li><h3><span lang="en">Design & quotation</span><span lang="ar">التصميم وعرض السعر</span></h3><p><span lang="en">You receive a layout and a clear, itemised quote.</span><span lang="ar">تستلم مخططًا وعرض سعر واضحًا ومفصّلًا.</span></p></li>
+        <li><h3><span lang="en">Supply</span><span lang="ar">التوريد</span></h3><p><span lang="en">Equipment and materials built to international safety standards.</span><span lang="ar">معدات ومواد مطابقة لمعايير السلامة الدولية.</span></p></li>
+        <li><h3><span lang="en">Installation & handover</span><span lang="ar">التركيب والتسليم</span></h3><p><span lang="en">Our team installs, checks and hands over on schedule.</span><span lang="ar">يركّب فريقنا ويفحص ويسلّم في الموعد.</span></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- QUOTE BAND -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="quote">
+        <div>
+          <h2><span lang="en">Planning a play or leisure space?</span><span lang="ar">تخطط لمساحة لعب أو ترفيه؟</span></h2>
+          <p><span lang="en">Send us the location, size and photos of the area. Our sales team will reply with options and a quotation.</span><span lang="ar">أرسل لنا الموقع والمساحة وصورًا للمكان، وسيرد عليك فريق المبيعات بالخيارات وعرض السعر.</span></p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/971501490844"><span lang="en">Message sales on WhatsApp</span><span lang="ar">راسل المبيعات عبر واتساب</span></a>
+          <a class="btn btn-ghost" href="mailto:sales@vixorauae.com"><span lang="en">Email sales@vixorauae.com</span><span lang="ar">راسلنا على sales@vixorauae.com</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><h2><span lang="en">Contact us</span><span lang="ar">تواصل معنا</span></h2></div>
+      <div class="contact-grid">
+        <div>
+          <div class="item"><h3><span lang="en">Company & projects</span><span lang="ar">الشركة والمشاريع</span></h3><a href="mailto:info@vixorauae.com" class="ltr">info@vixorauae.com</a></div>
+          <div class="item"><h3><span lang="en">Sales & quotations</span><span lang="ar">المبيعات وعروض الأسعار</span></h3><a href="mailto:sales@vixorauae.com" class="ltr">sales@vixorauae.com</a></div>
+          <div class="item"><h3><span lang="en">Careers</span><span lang="ar">الوظائف</span></h3><a href="mailto:hr@vixorauae.com" class="ltr">hr@vixorauae.com</a></div>
+        </div>
+        <div>
+          <div class="item"><h3><span lang="en">Office</span><span lang="ar">المكتب</span></h3><a href="tel:+97165296604" class="ltr">+971 6 529 6604</a></div>
+          <div class="item"><h3><span lang="en">Sales</span><span lang="ar">المبيعات</span></h3><a href="tel:+971501490844" class="ltr">+971 50 149 0844</a></div>
+          <div class="item"><h3><span lang="en">Operations</span><span lang="ar">العمليات</span></h3><a href="tel:+971508639910" class="ltr">+971 50 863 9910</a></div>
+        </div>
+        <div>
+          <div class="item"><h3><span lang="en">Address</span><span lang="ar">العنوان</span></h3>
+            <address><span lang="en">Building C1, F1, SF 11745<br>Ajman Free Zone, Mina Road<br>Ajman, UAE</span><span lang="ar">مبنى C1، F1، SF 11745<br>المنطقة الحرة بعجمان، شارع الميناء<br>عجمان، الإمارات</span></address></div>
+          <div class="item"><a href="https://www.google.com/maps/search/?api=1&query=Ajman+Free+Zone+Mina+Road+Ajman"><span lang="en">Open in Google Maps</span><span lang="ar">افتح في خرائط Google</span></a></div>
+          <div class="item"><a href="https://www.instagram.com/vixora_uae/"><span lang="en">Follow us on Instagram</span><span lang="ar">تابعنا على إنستغرام</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand"><img src="assets/logo-icon.png" alt="">Vixora Entertainment Trading F.Z.C</div>
+    <div>© 2026 Vixora UAE. <span lang="en">All rights reserved.</span><span lang="ar">جميع الحقوق محفوظة.</span></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/971501490844" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+</a>
+
+<script>
+(function(){
+  var html=document.documentElement;
+  function setLang(l){html.lang=l;html.dir=l==='ar'?'rtl':'ltr';try{localStorage.setItem('vx-lang',l)}catch(e){}}
+  try{var s=localStorage.getItem('vx-lang');if(s)setLang(s)}catch(e){}
+  document.getElementById('langBtn').addEventListener('click',function(){setLang(html.lang==='ar'?'en':'ar')});
+  var mb=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+  nav.addEventListener('click',function(e){if(e.target.closest('a')){nav.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
+})();
+</script>
+</body>
+</html>
